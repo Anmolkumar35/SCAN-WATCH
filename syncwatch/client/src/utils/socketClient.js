@@ -8,7 +8,7 @@ export const getSocket = () => {
   }
 
   const token = localStorage.getItem("scane_token") || localStorage.getItem("token") || "";
-  const serverUrl = import.meta.env.VITE_SOCKET_URL || "http://localhost:5000";
+  const serverUrl = import.meta.env.VITE_SOCKET_URL || "https://scan-watch.onrender.com";
 
   socket = io(serverUrl, {
     auth: { token },
